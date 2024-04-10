@@ -1,0 +1,3 @@
+nasm -O0 -gstabs -F dwarf -f elf32 text.s -l text.l -o text.o
+chmod +x nasm
+ld -m elf_i386 text.o -o text
